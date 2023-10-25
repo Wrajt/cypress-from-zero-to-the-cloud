@@ -53,8 +53,10 @@ describe('TAT Customer Service Center', () => {
     it('7 successfully submits the form using a custom command', () => {
         cy.fillMandatoryFieldsAndSubmit()
     })
-    it('8 identify the button for later clicking, where instead of identifying that element with cy.get(), we will' +
+    it.only('8 identify the button for later clicking, where instead of identifying that element with cy.get(), we' +
+        ' will' +
         ' use cy.contains()', () => {
-        cy.contains('button', "Send")
+        cy.contains('button', "Send").click()
     })
+
 })
