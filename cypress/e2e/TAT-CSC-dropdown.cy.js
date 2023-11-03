@@ -9,6 +9,7 @@ describe('TAT Customer Service Center', () => {
     it('2 selects a product (Mentorship) by its value', () => {
         cy.get('select').select('mentorship')
         cy.get('select option:selected').should('have.text', 'Mentorship')
+        cy.get('select option:selected').should('have.value', 'mentorship')
     })
     it('3 selects a product (Blog) by its index', () => {
         cy.get('select').select(1)
