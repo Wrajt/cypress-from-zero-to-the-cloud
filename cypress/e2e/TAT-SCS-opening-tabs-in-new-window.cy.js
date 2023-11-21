@@ -13,6 +13,6 @@ describe('TAT Customer Service Center', () => {
         cy.visit("../src/privacy.html")
         cy.contains('h1', 'TAT CSC - Privacy Policy').should('be.visible')
         cy.contains('p', 'Talking about testing').should('be.visible')
-
+        //testowy comment
     })
 })
